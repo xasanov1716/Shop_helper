@@ -28,8 +28,12 @@ class _AllProductScreenState extends State<AllProductScreen> {
       backgroundColor: AppColors.c_0C1A30,
       appBar: AppBar(
         elevation: 0,
+        automaticallyImplyLeading: false,
+        leading: IconButton(icon: Icon(Icons.arrow_back,color: AppColors.passiveTextColor,),onPressed: (){
+          Navigator.pop(context);
+      },),
         backgroundColor: AppColors.c_0C1A30,
-        title: const Text('All Products'),
+        title: const Text('All Products',style: TextStyle(color: AppColors.passiveTextColor),),
       ),
       body: BlocConsumer<ShopBloc, ShopState>(
           builder: (context, state) {

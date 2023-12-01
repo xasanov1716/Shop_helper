@@ -35,6 +35,10 @@ class _GetProductScreenState extends State<GetProductScreen> {
       backgroundColor: AppColors.c_0C1A30,
       appBar: AppBar(
         elevation: 0,
+        automaticallyImplyLeading: false,
+        leading: IconButton(icon: Icon(Icons.arrow_back,color: AppColors.passiveTextColor,),onPressed: (){
+          Navigator.pop(context);
+        },),
         backgroundColor: AppColors.c_0C1A30,
       ),
       body: BlocConsumer<ShopBloc, ShopState>(

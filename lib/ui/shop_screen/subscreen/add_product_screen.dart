@@ -54,7 +54,7 @@ class _AddProductScreenState extends State<AddProductScreen> {
         ),
         elevation: 0,
         backgroundColor: AppColors.c_0C1A30,
-        title: const Text('Add Product'),
+        title: const Text('Add Product',style: TextStyle(color: AppColors.passiveTextColor),),
       ),
       body: BlocConsumer<ShopBloc, ShopState>(
         listener: (context, state) {
